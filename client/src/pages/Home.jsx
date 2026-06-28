@@ -9,7 +9,7 @@ const Home = () => {
 
   const getCourses = async () => {
     try {
-      let response = await api.get("/courses/all");
+      let response = await api.get("/courses/get-all");
       setCourses(response.data.courses);
     } catch (error) {
       console.log(error);
